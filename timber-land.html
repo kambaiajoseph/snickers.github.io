@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="ONLINE-ORDER.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="background-color: aqua;" align="center">Here are some of the timber-land brands...</h1>
+
+    <div class="sneaker">
+        <img src="t1.jpeg" alt="" height="200px">
+        <p>Price: le 450</p>
+        <button onclick="redirectToPayment('Versace')">Order Now</button>
+    </div>
+
+    <div class="sneaker">
+        <img src="t2.jpeg" alt="" height="300px">
+        <p>Price: le 500</p>
+        <button onclick="redirectToPayment('Sandals')">Order Now</button>
+    </div>
+
+    <div class="sneaker">
+        <img src="t3.webp" alt="" height="180px">
+        <p>Price: le 350</p>
+        <button onclick="redirectToPayment('Boots')">Order Now</button>
+    </div>
+
+    <div class="sneaker">
+        <img src="t4.jpeg" alt="" height="300px">
+        <p>Price: le 400</p>
+        <button onclick="redirectToPayment('Heels')">Order Now</button>
+    </div>
+
+    <footer>
+        <p>Contact us: <a href="mailto:your.kambaimajoseph@gmail.com">kambaimajoseph@gmail.com</a></p>
+    </footer>
+
+    <script>
+        function redirectToPayment(sneakerType) {
+            // Store the selected sneaker type in localStorage
+            localStorage.setItem('selectedSneakerType', sneakerType);
+            
+            // Redirect to the payment gateway
+            window.location.href = 'payment-gateway.html';
+        }
+    </script>
+</body>
+</html>
